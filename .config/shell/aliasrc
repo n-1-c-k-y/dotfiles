@@ -1,0 +1,13 @@
+# Commands that mostly require sudo
+for command in mount umount rc-service emerge shutdown poweroff reboot ; do
+        alias $command="doas $command"
+done; unset command
+
+# Aliases
+alias sptlrx="sptlrx -p mpd"
+alias build='doas make clean install'
+alias nnn="n -C -c -d -A"
+alias fetch="neofetch --config ~/.config/neofetch/minimal.conf --ascii_distro gentoo_small"
+#alias update="doas env USE="-wayland" emerge --ask --verbose --update --deep --changed-use --keep-going @world" #emerge -avuUD --keep-going @world
+alias ls="ls --color=auto"
+alias rm="rm -i"
