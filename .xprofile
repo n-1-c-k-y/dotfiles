@@ -1,5 +1,5 @@
 # PATH:
-export PATH=$PATH:/home/gabriel/.local/bin:/home/gabriel/.cargo/bin:/home/gabriel/.spicetify
+export PATH=$PATH:~/.local/bin:~/.cargo/bin:~/.spicetify
 
 # Auto start
 gentoo-pipewire-launcher &      # Launch Pipewire
